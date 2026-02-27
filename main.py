@@ -28,4 +28,5 @@ async def on_ready():
     print(f"📊 السيرفرات: {len(bot.guilds)}")
     print("🇵🇸 من النهر إلى البحر")
 
-bot.run("TOKEN_هنا")
+import os
+bot.run(os.environ['TOKEN'])
